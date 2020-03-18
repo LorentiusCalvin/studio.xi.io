@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Studio XI - Watch Movies Online</title>
+        <link rel="icon" type="image/gif/png" href="logo_bulet.png">
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+    </head>
+    <body>
+        <nav class="navweb">
+            <a class="logonav" href="#index1" onclick="home(this.innerHTML)"><img src="logo.png"></a>
+            <a href="#index1" onclick="comedy(this.innerHTML)">Comedy</a>
+            <a href="#index1" onclick="action(this.innerHTML)">Action</a>
+            <a href="#index1" onclick="thriller(this.innerHTML)">Thriller</a>
+            <a href="#index1" onclick="romance(this.innerHTML)">Romance</a>  
+        </nav>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#index1" onclick="comedy(this.innerHTML)">Comedy</a>
+            <a href="#index1" onclick="action(this.innerHTML)">Action</a>
+            <a href="#index1" onclick="thriller(this.innerHTML)">Thriller</a>
+            <a href="#index1" onclick="romance(this.innerHTML)">Romance</a>
+        </div>
+  
+        <span onclick="openNav()">&#9776;<a class="logonav2" href="#index1" onclick="home(this.innerHTML)"><img src="logo.png"></a>
+        </span>
+
+        <div class="container" id="container">
+            <div class="index1" id="index1">
+                <div class="maincontainer" id="maincontainer">
+                </div>
+            </div>
+            <div class="content" id="content">
+            </div>
+        <div class="containerbawah" id="containerbawah">
+            <div class="index2" id="index2">
+            </div>
+            <div class="index3" id="index3">
+                <div class="cast" id="cast">Cast</div>
+                <div class="containercast">
+                    <div class="castbox" id="cast1">
+                    <div class="fotocast" id="fotocast1"></div>
+                    <div class="namacast" id="namacast1"></div>
+                </div>
+                <div class="castbox" id="cast2">
+                    <div class="fotocast" id="fotocast2"></div>
+                    <div class="namacast" id="namacast2"></div>
+                </div>
+                <div class="castbox" id="cast3">
+                    <div class="fotocast" id="fotocast3"></div>
+                    <div class="namacast" id="namacast3"></div>
+                </div>
+                <div class="castbox" id="cast4">
+                    <div class="fotocast" id="fotocast4"></div>
+                    <div class="namacast" id="namacast4"></div>
+                </div>
+                <div class="castbox end" id="cast5">
+                    <div class="fotocast" id="fotocast5"></div>
+                    <div class="namacast" id="namacast5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="bawah">
+            <div class="kiria">
+                <h4> About Us </h4>
+                <div class="wording">
+                    <h5> Studio XI provides you the best movies information, everything you need to know!</h5>
+                </div>
+            </div>
+        
+            <div class="tengah">
+                <h4> Popular Movies</h4>
+                <div class="wording">
+                    <h5> <ul>Avengers: Endgame</ul>
+                    <ul>Parasite</ul>
+                    <ul>Joker</ul>
+                    <ul>Jumanji: The Next Level</ul></h5>
+                </div>
+            </div>
+        
+            <div class="isibawah">
+                <h4> Stay Connected </h4>
+                <div class="wording">
+                    <h5> Subscribe us to receive informations about <br>
+                    upcoming movies, movies facts and more.</h5>
+                </div>
+                <img src="./image/icon.png" class="sosmed">
+            </div>
+        </div>
+    </div>
+    <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+    }
+  
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    }
+
+                var bg = "url('./image/home.jpg')";
+                var head = 'Studio 11 Original';
+                var subtitle = 'Wolverine';
+                var text = '<br> Logan has been living a desolate life following the death of Jean Grey at his hands. A Japanese girl goes to see him, and tells him that a man he knew in World War II, and saved his life, is now dying and wants to see him.';
+                var clear = 'none';
+                var discover = '<a href="#isihome" class="discover">Discover!</a>';
+
+                var isihome =
+                        '<div class="isihome" id="isihome"><div class="maincontainer1"><div class="kiri"><div class="judulhome">Romance</div><div class="taglinehome">Aww.. Stop it You..</div></div><div class="kanan"><div class="boxfilm1" id="cast1"><div class="filmpilihan" id="filmpilihan1"></div><div class="namapilihan" id="namapilihan1">asep</div></div><div class="boxfilm1" id="cast2"><div class="filmpilihan" id="filmpilihan2"></div><div class="namapilihan" id="namapilihan2">asep</div></div><div class="boxfilm1" id="cast3"><div class="filmpilihan" id="filmpilihan3"></div><div class="namapilihan" id="namapilihan3">asep</div></div><div class="boxfilm1" id="cast4"><div class="filmpilihan" id="filmpilihan4"></div><div class="namapilihan" id="namapilihan4">usin</div></div></div></div></div><div class="isihome"><div class="maincontainer2"><div class="kanan"><div class="boxfilm2" id="film1"><div class="filmpilihan" id="filmpilihan5"></div><div class="namapilihan" id="namapilihan5">asep</div></div><div class="boxfilm2" id="film2"><div class="filmpilihan" id="filmpilihan6"></div><div class="namapilihan" id="namapilihan6">asep</div></div><div class="boxfilm2" id="film3"><div class="filmpilihan" id="filmpilihan7"></div><div class="namapilihan" id="namapilihan7">asep</div></div><div class="boxfilm2" id="film4"><div class="filmpilihan" id="filmpilihan8"></div><div class="namapilihan" id="namapilihan8">usin</div></div></div><div class="kiri"><div class="judulhome">Thriller</div><div class="taglinehome">Thrilling Sensations Here...</div></div></div></div><div class="isihome" id="isihome"><div class="maincontainer1"><div class="kiri"><div class="judulhome">Action</div><div class="taglinehome">Ready, Set, Action!</div></div><div class="kanan"><div class="boxfilm1" id="cast1"><div class="filmpilihan" id="filmpilihan9"></div><div class="namapilihan" id="namapilihan9">asep</div></div><div class="boxfilm1" id="cast2"><div class="filmpilihan" id="filmpilihan10"></div><div class="namapilihan" id="namapilihan10">asep</div></div><div class="boxfilm1" id="cast3"><div class="filmpilihan" id="filmpilihan11"></div><div class="namapilihan" id="namapilihan11">asep</div></div><div class="boxfilm1" id="cast4"><div class="filmpilihan" id="filmpilihan12"></div><div class="namapilihan" id="namapilihan12">usin</div></div></div></div></div><div class="isihome"><div class="maincontainer2"><div class="kanan"><div class="boxfilm2" id="film1"><div class="filmpilihan" id="filmpilihan13"></div><div class="namapilihan" id="namapilihan13">asep</div></div><div class="boxfilm2" id="film2"><div class="filmpilihan" id="filmpilihan14"></div><div class="namapilihan" id="namapilihan14">asep</div></div><div class="boxfilm2" id="film3"><div class="filmpilihan" id="filmpilihan15"></div><div class="namapilihan" id="namapilihan15">asep</div></div><div class="boxfilm2" id="film4"><div class="filmpilihan" id="filmpilihan16"></div><div class="namapilihan" id="namapilihan16">usin</div></div></div><div class="kiri"><div class="judulhome">Comedy</div><div class="taglinehome">Let All the Fun Begin!</div></div></div></div>';
+                var footer = 
+                        '<div class="footer" id="footerhome"><div class="bawah"><div class="kiria"><h4> About Us </h4><div class="wording"><h5> Studio XI provides you the best movies information, everything you need to know!</h5></div></div><div class="tengah"><h4> Popular Movies</h4><div class="wording"><h5> <ul>Avengers: Endgame</ul><ul>Parasite</ul><ul>Joker</ul><ul>Jumanji: The Next Level</ul></h5></div></div><div class="isibawah"><h4> Stay Connected </h4><div class="wording"><h5> Subscribe us to receive informations about <br>upcoming movies, movies facts and more.</h5></div><img src="./image/icon.png" class="sosmed"></div></div></div>';
+
+                var lempar = '<h2>' + head + '</h2><h1>' + subtitle + '</h1><p>' + text + '</p>' + discover ;
+                document.body.style.backgroundColor = "black";
+                document.getElementById('content').innerHTML = discover;
+                document.getElementById('maincontainer').style.backgroundImage = "url('./image/home-2.jpg')";
+                document.getElementById('maincontainer').style.backgroundSize = "cover";
+                document.getElementById('maincontainer').style.backgroundPosition = "center center";
+                document.getElementById('maincontainer').style.backgroundRepeat = "no-repeat";
+                document.getElementById('index2').style.backgroundColor = "none";
+                document.getElementById('index2').innerHTML = isihome + footer;
+                document.getElementById('index3').style.display = "none";
+                document.getElementById('footer').style.display = "none";
+
+                document.getElementById('filmpilihan1').style.backgroundImage = "url('./isihomer/r-toalltheboys.jpg')";
+                document.getElementById('filmpilihan1').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan1').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan1').innerHTML = "To All the Boys";
+                
+                document.getElementById('filmpilihan2').style.backgroundImage = "url('./isihomer/r-kiminonawa.gif')";
+                document.getElementById('filmpilihan2').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan2').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan2').innerHTML = "Kimi No Nawa";
+                
+                document.getElementById('filmpilihan3').style.backgroundImage = "url('./isihomer/r-crazyrichasians.jpg')";
+                document.getElementById('filmpilihan3').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan3').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan3').innerHTML = "Crazy Rich Asians";
+
+                document.getElementById('filmpilihan4').style.backgroundImage = "url('./isihomer/r-beautyandthebeast.gif')";
+                document.getElementById('filmpilihan4').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan4').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan4').innerHTML = "Beauty and The Beast";
+
+                document.getElementById('filmpilihan5').style.backgroundImage = "url('./isihomet/t-parasite.jpg')";
+                document.getElementById('filmpilihan5').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan5').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan5').innerHTML = "Parasite";
+                
+                document.getElementById('filmpilihan6').style.backgroundImage = "url('./isihomet/t-joker.gif')";
+                document.getElementById('filmpilihan6').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan6').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan6').innerHTML = "Joker";
+                
+                document.getElementById('filmpilihan7').style.backgroundImage = "url('./isihomet/t-finaldestination.gif')";
+                document.getElementById('filmpilihan7').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan7').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan7').innerHTML = "Final Destination";
+
+                document.getElementById('filmpilihan8').style.backgroundImage = "url('./isihomet/t-drsleep.jpg')";
+                document.getElementById('filmpilihan8').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan8').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan8').innerHTML = "Doctor Sleep";
+
+                document.getElementById('filmpilihan9').style.backgroundImage = "url('./isihomea/a-kingsman.jpg')";
+                document.getElementById('filmpilihan9').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan9').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan9').innerHTML = "Kingsman";
+                
+                document.getElementById('filmpilihan10').style.backgroundImage = "url('./isihomea/a-inception.gif')";
+                document.getElementById('filmpilihan10').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan10').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan10').innerHTML = "Inception";
+                
+                document.getElementById('filmpilihan11').style.backgroundImage = "url('./isihomea/a-foxtrotsix.jpg')";
+                document.getElementById('filmpilihan11').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan11').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan11').innerHTML = "Foxtrot Six";
+
+                document.getElementById('filmpilihan12').style.backgroundImage = "url('./isihomea/a-avengers.gif')";
+                document.getElementById('filmpilihan12').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan12').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan12').innerHTML = "Avengers";
+
+                document.getElementById('filmpilihan13').style.backgroundImage = "url('./isihomec/c-thatawkwardmoment.gif')";
+                document.getElementById('filmpilihan13').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan13').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan13').innerHTML = "The Awkward Moment";
+                
+                document.getElementById('filmpilihan14').style.backgroundImage = "url('./isihomec/c-jumanji.jpg')";
+                document.getElementById('filmpilihan14').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan14').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan14').innerHTML = "Jumanji: The Next Level";
+                
+                document.getElementById('filmpilihan15').style.backgroundImage = "url('./isihomec/c-goodboys.jpg')";
+                document.getElementById('filmpilihan15').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan15').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan15').innerHTML = "Good Boys";
+
+                document.getElementById('filmpilihan16').style.backgroundImage = "url('./isihomec/c-deadpool.gif')";
+                document.getElementById('filmpilihan16').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan16').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan16').innerHTML = "Deadpool";
+
+            function home(a) {
+                if (a == '<img src="logo.png">') {
+                    var bg = "url('./image/home.jpg')";
+                    var head = 'Studio 11 Original';
+                    var subtitle = 'Wolverine';
+                    var text = '<br> Logan has been living a desolate life following the death of Jean Grey at his hands. A Japanese girl goes to see him, and tells him that a man he knew in World War II, and saved his life, is now dying and wants to see him.';
+                    var clear = 'none';
+                    var discover = '<a href="#isihome" class="discover">Discover!</a>';
+
+                    var isihome =
+                        '<div class="isihome" id="isihome"><div class="maincontainer1"><div class="kiri"><div class="judulhome">Romance</div><div class="taglinehome">Aww.. Stop it You..</div></div><div class="kanan"><div class="boxfilm1" id="cast1"><div class="filmpilihan" id="filmpilihan1"></div><div class="namapilihan" id="namapilihan1">asep</div></div><div class="boxfilm1" id="cast2"><div class="filmpilihan" id="filmpilihan2"></div><div class="namapilihan" id="namapilihan2">asep</div></div><div class="boxfilm1" id="cast3"><div class="filmpilihan" id="filmpilihan3"></div><div class="namapilihan" id="namapilihan3">asep</div></div><div class="boxfilm1" id="cast4"><div class="filmpilihan" id="filmpilihan4"></div><div class="namapilihan" id="namapilihan4">usin</div></div></div></div></div><div class="isihome"><div class="maincontainer2"><div class="kanan"><div class="boxfilm2" id="film1"><div class="filmpilihan" id="filmpilihan5"></div><div class="namapilihan" id="namapilihan5">asep</div></div><div class="boxfilm2" id="film2"><div class="filmpilihan" id="filmpilihan6"></div><div class="namapilihan" id="namapilihan6">asep</div></div><div class="boxfilm2" id="film3"><div class="filmpilihan" id="filmpilihan7"></div><div class="namapilihan" id="namapilihan7">asep</div></div><div class="boxfilm2" id="film4"><div class="filmpilihan" id="filmpilihan8"></div><div class="namapilihan" id="namapilihan8">usin</div></div></div><div class="kiri"><div class="judulhome">Thriller</div><div class="taglinehome">Thrilling Sensations Here...</div></div></div></div><div class="isihome" id="isihome"><div class="maincontainer1"><div class="kiri"><div class="judulhome">Action</div><div class="taglinehome">Ready, Set, Action!</div></div><div class="kanan"><div class="boxfilm1" id="cast1"><div class="filmpilihan" id="filmpilihan9"></div><div class="namapilihan" id="namapilihan9">asep</div></div><div class="boxfilm1" id="cast2"><div class="filmpilihan" id="filmpilihan10"></div><div class="namapilihan" id="namapilihan10">asep</div></div><div class="boxfilm1" id="cast3"><div class="filmpilihan" id="filmpilihan11"></div><div class="namapilihan" id="namapilihan11">asep</div></div><div class="boxfilm1" id="cast4"><div class="filmpilihan" id="filmpilihan12"></div><div class="namapilihan" id="namapilihan12">usin</div></div></div></div></div><div class="isihome"><div class="maincontainer2"><div class="kanan"><div class="boxfilm2" id="film1"><div class="filmpilihan" id="filmpilihan13"></div><div class="namapilihan" id="namapilihan13">asep</div></div><div class="boxfilm2" id="film2"><div class="filmpilihan" id="filmpilihan14"></div><div class="namapilihan" id="namapilihan14">asep</div></div><div class="boxfilm2" id="film3"><div class="filmpilihan" id="filmpilihan15"></div><div class="namapilihan" id="namapilihan15">asep</div></div><div class="boxfilm2" id="film4"><div class="filmpilihan" id="filmpilihan16"></div><div class="namapilihan" id="namapilihan16">usin</div></div></div><div class="kiri"><div class="judulhome">Comedy</div><div class="taglinehome">Let All the Fun Begin!</div></div></div></div>';
+                    var footer = 
+                        '<div class="footer" id="footerhome"><div class="bawah"><div class="kiria"><h4> About Us </h4><div class="wording"><h5> Studio XI provides you the best movies information, everything you need to know!</h5></div></div><div class="tengah"><h4> Popular Movies</h4><div class="wording"><h5> <ul>Avengers: Endgame</ul><ul>Parasite</ul><ul>Joker</ul><ul>Jumanji: The Next Level</ul></h5></div></div><div class="isibawah"><h4> Stay Connected </h4><div class="wording"><h5> Subscribe us to receive informations about <br>upcoming movies, movies facts and more.</h5></div><img src="./image/icon.png" class="sosmed"></div></div></div>';
+
+                } else {
+                    alert('This site is broken.')
+                }
+                function home(a) {
+                    if (a.matches) { // If media query matches
+                    document.getElementById('maincontainer').style.backgroundImage = "url('./image/homehp.jpg')";
+                } else {
+                    document.getElementById('maincontainer').style.backgroundImage = "url('./image/home-2.jpg')";
+                    }
+                }
+                var a = window.matchMedia("(max-width: 768px)")
+                home(a) // Call listener function at run time
+                a.addListener(home) // Attach listener function on state changes
+
+                var lempar = '<h2>' + head + '</h2><h1>' + subtitle + '</h1><p>' + text + '</p>' + discover ;
+                document.body.style.backgroundColor = "black";
+                document.getElementById('content').innerHTML = discover;
+                document.getElementById('maincontainer').style.backgroundSize = "cover";
+                document.getElementById('maincontainer').style.backgroundPosition = "center center";
+                document.getElementById('maincontainer').style.backgroundRepeat = "no-repeat";
+                document.getElementById('index2').style.backgroundColor = "none";
+                document.getElementById('index2').innerHTML = isihome + footer;
+                document.getElementById('index3').style.display = "none";
+                document.getElementById('footer').style.display = "none";
+
+                document.getElementById('filmpilihan1').style.backgroundImage = "url('./isihomer/r-toalltheboys.jpg')";
+                document.getElementById('filmpilihan1').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan1').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan1').innerHTML = "To All the Boys";
+                
+                document.getElementById('filmpilihan2').style.backgroundImage = "url('./isihomer/r-kiminonawa.gif')";
+                document.getElementById('filmpilihan2').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan2').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan2').innerHTML = "Kimi No Nawa";
+                
+                document.getElementById('filmpilihan3').style.backgroundImage = "url('./isihomer/r-crazyrichasians.jpg')";
+                document.getElementById('filmpilihan3').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan3').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan3').innerHTML = "Crazy Rich Asians";
+
+                document.getElementById('filmpilihan4').style.backgroundImage = "url('./isihomer/r-beautyandthebeast.gif')";
+                document.getElementById('filmpilihan4').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan4').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan4').innerHTML = "Beauty and The Beast";
+
+                document.getElementById('filmpilihan5').style.backgroundImage = "url('./isihomet/t-parasite.jpg')";
+                document.getElementById('filmpilihan5').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan5').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan5').innerHTML = "Parasite";
+                
+                document.getElementById('filmpilihan6').style.backgroundImage = "url('./isihomet/t-joker.gif')";
+                document.getElementById('filmpilihan6').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan6').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan6').innerHTML = "Joker";
+                
+                document.getElementById('filmpilihan7').style.backgroundImage = "url('./isihomet/t-finaldestination.gif')";
+                document.getElementById('filmpilihan7').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan7').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan7').innerHTML = "Final Destination";
+
+                document.getElementById('filmpilihan8').style.backgroundImage = "url('./isihomet/t-drsleep.jpg')";
+                document.getElementById('filmpilihan8').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan8').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan8').innerHTML = "Doctor Sleep";
+
+                document.getElementById('filmpilihan9').style.backgroundImage = "url('./isihomea/a-kingsman.jpg')";
+                document.getElementById('filmpilihan9').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan9').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan9').innerHTML = "Kingsman";
+                
+                document.getElementById('filmpilihan10').style.backgroundImage = "url('./isihomea/a-inception.gif')";
+                document.getElementById('filmpilihan10').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan10').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan10').innerHTML = "Inception";
+                
+                document.getElementById('filmpilihan11').style.backgroundImage = "url('./isihomea/a-foxtrotsix.jpg')";
+                document.getElementById('filmpilihan11').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan11').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan11').innerHTML = "Foxtrot Six";
+
+                document.getElementById('filmpilihan12').style.backgroundImage = "url('./isihomea/a-avengers.gif')";
+                document.getElementById('filmpilihan12').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan12').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan12').innerHTML = "Avengers";
+
+                document.getElementById('filmpilihan13').style.backgroundImage = "url('./isihomec/c-thatawkwardmoment.gif')";
+                document.getElementById('filmpilihan13').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan13').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan13').innerHTML = "The Awkward Moment";
+                
+                document.getElementById('filmpilihan14').style.backgroundImage = "url('./isihomec/c-jumanji.jpg')";
+                document.getElementById('filmpilihan14').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan14').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan14').innerHTML = "Jumanji: The Next Level";
+                
+                document.getElementById('filmpilihan15').style.backgroundImage = "url('./isihomec/c-goodboys.jpg')";
+                document.getElementById('filmpilihan15').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan15').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan15').innerHTML = "Good Boys";
+
+                document.getElementById('filmpilihan16').style.backgroundImage = "url('./isihomec/c-deadpool.gif')";
+                document.getElementById('filmpilihan16').style.backgroundSize = "cover";
+                document.getElementById('filmpilihan16').style.backgroundRepeat = "no-repeat";
+                document.getElementById('namapilihan16').innerHTML = "Deadpool";
+            }
+            
+            function romance(b) {
+                if (b == 'Romance') {
+                    var head = 'To All the Boys: P.S. I Still Love You';
+                    var year = '2020  |  1h 41m | 6.1/10 IMDb';
+                    var syn = '<br> After the fight between Jean and Josh and Peter at the Covey&#39;s Christmas party, Lara Jean realizes that she has been fallen for Peter.'
+                    var more = '<a href="#index2" class="more">See More</a>';
+
+                    var isisynopsis = '<div class="synopsisbox" id="synopsis"></div>';
+                    var overview = 'Overview';
+                    var fotoorang = '<div class="fotoorang" id="fotoorang"></div>';
+                    var director = 'DIRECTED BY';
+                    var namadirector = 'Michael Fimognari';
+
+                    var awards = 'AWARDS';
+                    var awards1 = '-';
+                    var awards1isi = '';
+                    var awards2 = '';
+                    var awards2isi = '';
+                    var country = 'COUNTRY';
+                    var region = 'USA';
+
+                    var subtitle = 'Synopsis';
+                    var text = 'After the fight between Lara Jean, Josh and Peter at the Coveys&#39s Christmas party, Lara Jean realizes that she has fallen for Peter. Hoping to reconcile, Lara Jean heads over to Peter&#39;s house with a love letter she hopes for him to read. After a brief talk, the two almost kiss but his brother interrupts and then they decide they want to be a real couple. At school, Lara Jean discovers that someone has posted a video of her and Peter making out in the hot tub from the ski trip. A rumor spreads that the two were having sex. After seeing the video during school, Peter is furious and warns the anonymous poster not to mess with Lara Jean.';
+
+                    var cast1 = '<h1>Lana Condor</h1> <p>Lara Jean</p>';
+                    var cast2 = '<h1>Noah Centineo</h1> <p>Peter</p>';
+                    var cast3 = '<h1>Jordan Fisher</h1> <p>John Ambrose</p>';
+                    var cast4 = '<h1>Anna Cathcart</h1> <p>Kitty</p>';
+                    var cast5 = '<h1>Ross Butler</h1> <p>Trevor</p>';
+
+                    var lempar = '<h1>' + head + '</h1><h2>' + year + '</h2><p>' + syn + '</p>' + more ;
+                    var synopsisfull = '<h1>' + overview + '</h1>'+ fotoorang + '<div class="isiorang" id="isiorang"><h2>' + director + '</h2><h1>' + namadirector + '</h1><h2>' + awards + '</h2><h3>' + awards1 + '</h3><h4>' + awards1isi + '</h4><h3>' + awards2 + '</h3><h4>' + awards2isi + '</h4><h2>' + country + '</h2><h3>' + region + '</h3></div><h1>' + subtitle + '</h1><p>' + text + '</p>';
+
+                } else {
+                    alert('This site is broken.')
+                }
+
+                function romance(b) {
+                    if (b.matches) { // If media query matches
+                    document.getElementById('maincontainer').style.backgroundImage = "url('./image/toalltheboyshp.jpg')";
+                } else {
+                    document.getElementById('maincontainer').style.backgroundImage = "url('./image/toalltheboyscut.jpg')";
+                    }
+                }
+                var b = window.matchMedia("(max-width: 768px)")
+                romance(b) // Call listener function at run time
+                b.addListener(romance) // Attach listener function on state changes
+
+                document.getElementById('content').innerHTML = lempar;
+
+                document.getElementById('maincontainer').style.backgroundSize = "cover";
+                document.getElementById('maincontainer').style.backgroundRepeat = "no-repeat";
+                /*document.getElementById('containerbawah').style.backgroundImage = "url('./image/toalltheboyscut.jpg')";*/
+                document.getElementById('containerbawah').style.backgroundColor = "rgb(0, 0, 0)";
+                document.getElementById('index2').style.backgroundColor = "none";
+                document.getElementById('index3').style.display = "block";
+                document.getElementById('footer').style.display = "block";
+
+                document.getElementById('index2').innerHTML = isisynopsis;
+                document.getElementById('synopsis').style.display = "block";
+                document.getElementById('synopsis').innerHTML = synopsisfull;
+                document.getElementById('fotoorang').style.backgroundImage = "url('./image/mike.png')";
+                document.getElementById('fotoorang').style.backgroundSize = "cover";
+                document.getElementById('fotoorang').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotoorang').style.backgroundPosition = "center center";
+
+                document.getElementById('fotocast1').style.backgroundImage = "url('./castromance/larajean.jpeg')";
+                document.getElementById('fotocast1').style.backgroundSize = "cover";
+                document.getElementById('fotocast1').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast1').style.backgroundPosition = "center center";
+                document.getElementById('namacast1').innerHTML = cast1;
+
+                document.getElementById('fotocast2').style.backgroundImage = "url('./castromance/peter.jpg')";
+                document.getElementById('fotocast2').style.backgroundSize = "cover";
+                document.getElementById('fotocast2').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast2').style.backgroundPosition = "center center";
+                document.getElementById('namacast2').innerHTML = cast2;
+
+                document.getElementById('fotocast3').style.backgroundImage = "url('./castromance/john.jpg')";
+                document.getElementById('fotocast3').style.backgroundSize = "cover";
+                document.getElementById('fotocast3').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast3').style.backgroundPosition = "center center";
+                document.getElementById('namacast3').innerHTML = cast3;
+
+                document.getElementById('fotocast4').style.backgroundImage = "url('./castromance/kitty.jpg')";
+                document.getElementById('fotocast4').style.backgroundSize = "cover";
+                document.getElementById('fotocast4').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast4').style.backgroundPosition = "center center";
+                document.getElementById('namacast4').innerHTML = cast4;
+
+                document.getElementById('fotocast5').style.backgroundImage = "url('./castromance/trevor.jpg')";
+                document.getElementById('fotocast5').style.backgroundSize = "cover";
+                document.getElementById('fotocast5').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast5').style.backgroundPosition = "center center";
+                document.getElementById('namacast5').innerHTML = cast5;
+
+            }
+
+            function thriller(c) {
+                if (c == 'Thriller') {
+                    var head = 'Parasite';
+                    var year = "2019  |  2h 12m  |  8.6/10 IMDb";
+                    var syn = '<br>A poor family, the Kims, con their way into becoming the servants of a rich family, the Parks. But their easy life gets complicated when their deception is threatened with exposure.'
+                    var more = '<a href="#index2" class="more">See More</a>';
+
+                    var isisynopsis = '<div class="synopsisbox" id="synopsis"></div>';
+                    var overview = 'Overview';
+                    var fotoorang = '<div class="fotoorang" id="fotoorang"></div>';
+                    var director = 'DIRECTED BY';
+                    var namadirector = 'Bong Joon-Ho';
+
+                    var awards = 'AWARDS';
+                    var awards1 = '92nd ACADEMY AWARDS';
+                    var awards1isi = 'Best Picture, Best Director, Best Original Screenplay and Best International Feature Film';
+                    var awards2 = '73rd BRITISH ACADEMY FILM AWARDS';
+                    var awards2isi = 'Best Original Screenplay and Best Film Not in the English Language';
+                    var country = 'COUNTRY';
+                    var region = 'SOUTH KOREA';
+
+                    var subtitle = 'Synopsis';
+                    var text = 'The Kims - mother and father Chung-sook and Ki-taek, and their young adult offspring, son Ki-woo and daughter Ki-jung - are a poor family living in a shabby and cramped half basement apartment in a busy lower working class commercial district of Seoul. Without even knowing it, they, especially Mr. and Mrs. Kim, literally smell of poverty. Often as a collective, they perpetrate minor scams to get by, and even when they have jobs, they do the minimum work required. Ki-woo is the one who has dreams of getting out of poverty by one day going to university. Despite not having that university education, Ki-woo is chosen by his university student friend Min, who is leaving to go to school, to take over his tutoring job to Park Da-hye, who Min plans to date once he returns to Seoul and she herself is in university. <br> <br> The Parks are a wealthy family who for four years have lived in their modernistic house designed by and the former residence of famed architect Namgoong. While Mr. and Mrs. Park are all about status, Mrs. Park has a flighty, simpleminded mentality and temperament, which Min tells Ki-woo to feel comfortable in lying to her about his education to get the job. In getting the job, Ki-woo further learns that Mrs. Park is looking for an art therapist for the Parks&#39; adolescent son, Da-song, Ki-woo quickly recommending his professional art therapist friend "Jessica", really Ki-jung who he knows can pull off the scam in being the easiest liar of the four Kims. In Ki-woo also falling for Da-hye, he begins to envision himself in that house, and thus the Kims as a collective start a plan for all the Kims, like Ki-jung using assumed names, to replace existing servants in the Parks&#39; employ in orchestrating reasons for them to be fired. <br> <br> The most difficult to get rid of may be Moon-gwang, the Parks&#39; housekeeper who literally came with the house - she Namgoong&#39;s housekeeper when he lived there - and thus knows all the little nooks and crannies of it better than the Parks themselves. The question then becomes how far the Kims can take this scam in their quest to become their version of the Parks.';
+
+                    var cast = 'Cast';
+                    var cast1 = '<h1>Cho Yeo-jeong</h1> <p>Choi Yeon-gyo</p>';
+                    var cast2 = '<h1>Choi Woo-shik</h1> <p>Kim Ki-woo</p>';
+                    var cast3 = '<h1>Lee Sun-kyun</h1> <p>Park Dong-ik</p>';
+                    var cast4 = '<h1>Park So-da</h1> <p>Kim Ki-jung</p>';
+                    var cast5 = '<h1>Song Kang-ho</h1> <p>Kim Ki-taek</p>';
+
+                    var lempar = '<h1>' + head + '</h1><h2>' + year + '</h2><p>' + syn + '</p>' + more ;
+                    var synopsisfull = '<h1>' + overview + '</h1>'+ fotoorang + '<div class="isiorang" id="isiorang"><h2>' + director + '</h2><h1>' + namadirector + '</h1><h2>' + awards + '</h2><h3>' + awards1 + '</h3><h4>' + awards1isi + '</h4><h3>' + awards2 + '</h3><h4>' + awards2isi + '</h4><h2>' + country + '</h2><h3>' + region + '</h3></div><h1>' + subtitle + '</h1><p>' + text + '</p>';
+
+                } else {
+                    alert('This site is broken.')
+                }
+
+                function thriller(c) {
+                    if (c.matches) { // If media query matches
+                    document.getElementById('maincontainer').style.backgroundImage = "url('./image/parasitehp.jpg')";
+                } else {
+                    document.getElementById('maincontainer').style.backgroundImage = "url('./image/parasitecut.jpg')";
+                    }
+                }
+                var c = window.matchMedia("(max-width: 768px)")
+                thriller(c) // Call listener function at run time
+                c.addListener(thriller) // Attach listener function on state changes
+
+                document.getElementById('content').innerHTML = lempar;
+
+                document.getElementById('maincontainer').style.backgroundSize = "cover";
+                document.getElementById('maincontainer').style.backgroundRepeat = "no-repeat";
+                /*document.getElementById('containerbawah').style.backgroundImage = "url('./image/parasitecut.jpg')";*/
+                document.getElementById('containerbawah').style.backgroundColor = "rgb(0, 0, 0)";
+                document.getElementById('index2').style.backgroundColor = "none";
+                document.getElementById('index3').style.display = "block";
+                document.getElementById('footer').style.display = "block";
+
+                document.getElementById('index2').innerHTML = isisynopsis;
+                document.getElementById('synopsis').style.display = "block";
+                document.getElementById('synopsis').innerHTML = synopsisfull;
+                document.getElementById('fotoorang').style.backgroundImage = "url('./image/Bong-Joon-Ho-1.png')";
+                document.getElementById('fotoorang').style.backgroundSize = "cover";
+                document.getElementById('fotoorang').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotoorang').style.backgroundPosition = "center center";
+
+                document.getElementById('fotocast1').style.backgroundImage = "url('./castthriller/Cho Yeo jeong.jpg')";
+                document.getElementById('fotocast1').style.backgroundSize = "cover";
+                document.getElementById('fotocast1').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast1').style.backgroundPosition = "center center";
+                document.getElementById('namacast1').innerHTML = cast1;
+
+                document.getElementById('fotocast2').style.backgroundImage = "url('./castthriller/Choi Woo shik.jpg')";
+                document.getElementById('fotocast2').style.backgroundSize = "cover";
+                document.getElementById('fotocast2').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast2').style.backgroundPosition = "center center";
+                document.getElementById('namacast2').innerHTML = cast2;
+
+                document.getElementById('fotocast3').style.backgroundImage = "url('./castthriller/Lee Sun Kyun.jpg')";
+                document.getElementById('fotocast3').style.backgroundSize = "cover";
+                document.getElementById('fotocast3').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast3').style.backgroundPosition = "center center";
+                document.getElementById('namacast3').innerHTML = cast3;
+
+                document.getElementById('fotocast4').style.backgroundImage = "url('./castthriller/Park So dam.jpg')";
+                document.getElementById('fotocast4').style.backgroundSize = "cover";
+                document.getElementById('fotocast4').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast4').style.backgroundPosition = "center center";
+                document.getElementById('namacast4').innerHTML = cast4;
+
+                document.getElementById('fotocast5').style.backgroundImage = "url('./castthriller/Song Kang ho.jpg')";
+                document.getElementById('fotocast5').style.backgroundSize = "cover";
+                document.getElementById('fotocast5').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast5').style.backgroundPosition = "center center";
+                document.getElementById('namacast5').innerHTML = cast5;
+
+            
+            }
+
+            function action(d) {
+                if (d == 'Action') {
+                    var head = 'Avengers: Endgame';
+                    var year = "2019  |  3h 1m | 8.4/10 IMDb";
+                    var syn = '<br>The universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos&#39; actions and restore balance to the universe.';
+                    var more = '<a href="#index2" class="more">See More</a>';
+                    
+                    var isisynopsis = '<div class="synopsisbox" id="synopsis"></div>';
+                    var overview = 'Overview';
+                    var fotoorang = '<div class="fotoorang" id="fotoorang"></div>';
+                    var director = 'DIRECTED BY';
+                    var namadirector = 'Anthony Russo, Joe Russo';
+
+                    var awards = 'AWARDS';
+                    var awards1 = 'GOLD DERBY AWARDS 2020';
+                    var awards1isi = 'Best Visual Effect';
+                    var awards2 = 'MTV MOVIE & TV AWARDS 2019';
+                    var awards2isi = 'Best Movie, Best Hero, Best Villain, Nominated for Best Fight';
+                    var country = 'COUNTRY';
+                    var region = 'USA';
+
+                    var subtitle = 'Synopsis';
+                    var text = 'In the opening, Clint Barton is teaching his daughter archery on his secluded farm while his wife prepares a picnic lunch for them. Nebula and Tony Stark are stranded in space following their defeat by Thanos on Titan, but are returned to Earth by Carol Danvers and reunited with Natasha Romanoff, Bruce Banner, Steve Rogers, Rocket, Thor, and James Rhodes. The team formulates a plan to steal the Infinity Stones back from Thanos and use them to reverse his actions, but learn upon finding him that he had used the stones a second time to destroy them, preventing their further use. He tells the remaining Avengers that he did so to avoid using the Stones for further nefarious purposes. <br> <br> Five years later, Scott Lang escapes from the quantum realm to discover that his daughter Cassie is now a teenager and that Hope van Dyne, along with half of the population, has disappeared in the snap. Rogers has been leading grief counseling sessions for survivors still struggling with the effects of the snap, while Romanoff is tirelessly keeping watch over both Earth and the rest of the universe with the help of Rhodes, Danvers, Okoye, Rocket, and Nebula. Lang goes to Romanoff and Rogers, and explains that while five years had passed for them, only five hours had passed for him in the quantum realm and the difference in time factors there. The three go to Stark, who is now raising a child with Pepper Potts, and explain their theory that the quantum realm can be used to go back in time and steal the Infinity Stones before Thanos is able to collect them. Stark reflecting upon the loss of Peter Parker decides to test theoretical models that would work with Lang&#39;s quantum tunnel, eventually finding one that works.';
+
+                    var cast1 = '<h1>Robert Downey Jr</h1> <p>Tony Stark</p>';
+                    var cast2 = '<h1>Chris Evans</h1> <p>Steve Rogers</p>';
+                    var cast3 = '<h1>Mark Ruffalo</h1> <p>Dr. Bruce Banner</p>';
+                    var cast4 = '<h1>Chris Hemsworth</h1> <p>Thor</p>';
+                    var cast5 = '<h1>Scarlett J.</h1> <p>Natasha Romanoff</p>';
+                    
+                    var lempar = '<h1>' + head + '</h1><h2>' + year + '</h2><p>' + syn + '</p>' + more ;
+                    var synopsisfull = '<h1>' + overview + '</h1>'+ fotoorang + '<div class="isiorang" id="isiorang"><h2>' + director + '</h2><h1>' + namadirector + '</h1><h2>' + awards + '</h2><h3>' + awards1 + '</h3><h4>' + awards1isi + '</h4><h3>' + awards2 + '</h3><h4>' + awards2isi + '</h4><h2>' + country + '</h2><h3>' + region + '</h3></div><h1>' + subtitle + '</h1><p>' + text + '</p>';
+
+                } else {
+                    alert('This site is broken.')
+                }
+
+                function action(d) {
+                    if (d.matches) { // If media query matches
+                    document.getElementById('maincontainer').style.backgroundImage = "url('./image/avengershp.jpg')";
+                } else {
+                    document.getElementById('maincontainer').style.backgroundImage = "url('./image/avengerscut.jpg')";
+                    }
+                }
+                var d = window.matchMedia("(max-width: 768px)")
+                action(d) // Call listener function at run time
+                d.addListener(action) // Attach listener function on state changes
+
+                document.getElementById('content').innerHTML = lempar;
+
+                document.getElementById('maincontainer').style.backgroundSize = "cover";
+                document.getElementById('maincontainer').style.backgroundRepeat = "no-repeat";
+                /*document.getElementById('containerbawah').style.backgroundImage = "url('./image/avengerscut.jpg')";*/
+                document.getElementById('containerbawah').style.backgroundColor = "rgb(0, 0, 0)";
+                document.getElementById('index2').style.backgroundColor = "none";
+                document.getElementById('index3').style.display = "block";
+                document.getElementById('footer').style.display = "block";
+
+                document.getElementById('index2').innerHTML = isisynopsis;
+                document.getElementById('synopsis').style.display = "block";
+                document.getElementById('synopsis').innerHTML = synopsisfull;
+                document.getElementById('fotoorang').style.backgroundImage = "url('./image/russo.png')";
+                document.getElementById('fotoorang').style.backgroundSize = "cover";
+                document.getElementById('fotoorang').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotoorang').style.backgroundPosition = "center center";
+                
+                document.getElementById('fotocast1').style.backgroundImage = "url('./castaction/ironman.jpg')";
+                document.getElementById('fotocast1').style.backgroundSize = "cover";
+                document.getElementById('fotocast1').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast1').style.backgroundPosition = "center center";
+                document.getElementById('namacast1').innerHTML = cast1;
+
+                document.getElementById('fotocast2').style.backgroundImage = "url('./castaction/chrisevans.jpg')";
+                document.getElementById('fotocast2').style.backgroundSize = "cover";
+                document.getElementById('fotocast2').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast2').style.backgroundPosition = "center center";
+                document.getElementById('namacast2').innerHTML = cast2;
+
+                document.getElementById('fotocast3').style.backgroundImage = "url('./castaction/mark.jpg')";
+                document.getElementById('fotocast3').style.backgroundSize = "cover";
+                document.getElementById('fotocast3').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast3').style.backgroundPosition = "center center";
+                document.getElementById('namacast3').innerHTML = cast3;
+
+                document.getElementById('fotocast4').style.backgroundImage = "url('./castaction/thor.jpg')";
+                document.getElementById('fotocast4').style.backgroundSize = "cover";
+                document.getElementById('fotocast4').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast4').style.backgroundPosition = "center center";
+                document.getElementById('namacast4').innerHTML = cast4;
+
+                document.getElementById('fotocast5').style.backgroundImage = "url('./castaction/scarlett.jpg')";
+                document.getElementById('fotocast5').style.backgroundSize = "cover";
+                document.getElementById('fotocast5').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast5').style.backgroundPosition = "center center";
+                document.getElementById('namacast5').innerHTML = cast5;
+
+                
+            }
+
+            function comedy(e) {
+                if (e == 'Comedy') {
+                    var head = 'Jumanji: The Next Level';
+                    var year = "2019  |  2h 3m | 6.8/10 IMDb";
+                    var syn = '<br> As they return to rescue one of their own, the players will have to brave parts unknown from arid deserts to snowy mountains, to escape the world&#39;s most dangerous game.';
+                    var more = '<a href="#index2" class="more">See More</a>';
+
+                    var isisynopsis = '<div class="synopsisbox" id="synopsis"></div>';
+                    var overview = 'Overview';
+                    var fotoorang = '<div class="fotoorang" id="fotoorang"></div>';
+                    var director = 'DIRECTED BY';
+                    var namadirector = 'Jake Kardan';
+
+                    var awards = 'AWARDS';
+                    var awards1 = 'GEORGIA FILM CRITICS ASSOCIATION (GAFCA) 2020';
+                    var awards1isi = 'Nominated in Oglethorpe Award for Excellence in Georgia Cinema';
+                    var awards2 = 'GOLDEN TRAILER AWARDS 2018';
+                    var awards2isi = 'Nominated for Best Fantasy/Adventure TV Spot';
+                    var country = 'COUNTRY';
+                    var region = 'USA';
+
+                    var subtitle = 'Synopsis';
+                    var text = 'In 2019, three years after their adventure in Jumanji, Spencer Gilpin, Anthony "Fridge" Johnson, Martha Kaply, and Bethany Walker lead different lives, but plan a reunion brunch in Brantford, New Hampshire that year. Spencer, apprehensive of the meeting due to depression, contemplates returning to Jumanji where he had purpose, and spends his first night looking over the broken video-game system he held onto. The following day, his friends visit his home, meeting with Spencer&#39;s grandfather Eddie, who is recovering from hip surgery, and Eddie&#39;s former friend and business partner Milo Walker, who is visiting for an unknown reason. Learning that they have no idea where Spencer is, the group search the house, and find the Jumanji game partially repaired in the basement. Realising Spencer returned to the game, his friends decide to follow him.<br><br>The game malfunctions when starting up, sucking in only Fridge and Martha, along with Eddie and Milo, forcing Bethany to contact fellow Jumanji player Alex Vreeke for help. Inside the game, Martha finds herself as her avatar Ruby Roundhouse, yet Fridge becomes Bethany&#39;s avatar Professor Sheldon Oberon, while Eddie and Milo become avatars Dr. Smolder Bravestone and Franklin "Mouse" Finbar respectively. After instructing Eddie and Milo on the game&#39;s rules, the group encounter non-player character Nigel Billingsley, the game&#39;s guide, who reveals that since its last use, Jumanji is suffering from a massive drought. To leave the game, Nigel reveals that the group must recover the "Falcon Jewel" – a magical necklace stolen by warlord Jurgen the Brutal – which can end the drought if brought before sunlight and uttering "Jumanji".';
+
+                    var cast1 = '<h1>Dwyane Johnson</h1> <p>Dr. Xander</p>';
+                    var cast2 = '<h1>Jack Black</h1> <p>Professor Sheldon</p>';
+                    var cast3 = '<h1>Kevin Hart</h1> <p>Franklin</p>';
+                    var cast4 = '<h1>Karen Gillan</h1> <p>Ruby Roundhouse</p>';
+                    var cast5 = '<h1>Awkwafina</h1> <p>Ming Fleetfoot</p>';
+
+                    var lempar = '<h1>' + head + '</h1><h2>' + year + '</h2><p>' + syn + '</p>' + more ;
+                    var synopsisfull = '<h1>' + overview + '</h1>'+ fotoorang + '<div class="isiorang" id="isiorang"><h2>' + director + '</h2><h1>' + namadirector + '</h1><h2>' + awards + '</h2><h3>' + awards1 + '</h3><h4>' + awards1isi + '</h4><h3>' + awards2 + '</h3><h4>' + awards2isi + '</h4><h2>' + country + '</h2><h3>' + region + '</h3></div><h1>' + subtitle + '</h1><p>' + text + '</p>';
+
+                } else {
+                    alert('This site is broken.')
+                }
+
+                function comedy(e) {
+                    if (e.matches) { // If media query matches
+                    document.getElementById('maincontainer').style.backgroundImage = "url('./image/jumanjihp.jpg')";
+                } else {
+                    document.getElementById('maincontainer').style.backgroundImage = "url('./image/jumanji.jpg')";
+                    }
+                }
+                var e = window.matchMedia("(max-width: 768px)")
+                comedy(e) // Call listener function at run time
+                e.addListener(comedy) // Attach listener function on state changes
+
+                document.getElementById('content').innerHTML = lempar;
+
+                document.getElementById('maincontainer').style.backgroundSize = "cover";
+                document.getElementById('maincontainer').style.backgroundRepeat = "no-repeat";
+                /*document.getElementById('containerbawah').style.backgroundImage = "url('./image/jumanji.jpg')";*/
+                document.getElementById('containerbawah').style.backgroundColor = "rgb(0, 0, 0)";
+                document.getElementById('index2').style.backgroundColor = "none";
+                document.getElementById('index3').style.display = "block";
+                document.getElementById('footer').style.display = "block";
+
+                document.getElementById('index2').innerHTML = isisynopsis;
+                document.getElementById('synopsis').style.display = "block";
+                document.getElementById('synopsis').innerHTML = synopsisfull;
+                document.getElementById('fotoorang').style.backgroundImage = "url('./image/jake.png')";
+                document.getElementById('fotoorang').style.backgroundSize = "cover";
+                document.getElementById('fotoorang').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotoorang').style.backgroundPosition = "center center";
+                
+                document.getElementById('fotocast1').style.backgroundImage = "url('./castcomedy/rock.jpg')";
+                document.getElementById('fotocast1').style.backgroundSize = "cover";
+                document.getElementById('fotocast1').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast1').style.backgroundPosition = "center center";
+                document.getElementById('namacast1').innerHTML = cast1;
+
+                document.getElementById('fotocast2').style.backgroundImage = "url('./castcomedy/jack.png')";
+                document.getElementById('fotocast2').style.backgroundSize = "cover";
+                document.getElementById('fotocast2').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast2').style.backgroundPosition = "center center";
+                document.getElementById('namacast2').innerHTML = cast2;
+
+                document.getElementById('fotocast3').style.backgroundImage = "url('./castcomedy/kevin.jpg')";
+                document.getElementById('fotocast3').style.backgroundSize = "cover";
+                document.getElementById('fotocast3').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast3').style.backgroundPosition = "center center";
+                document.getElementById('namacast3').innerHTML = cast3;
+
+                document.getElementById('fotocast4').style.backgroundImage = "url('./castcomedy/karen.jpg')";
+                document.getElementById('fotocast4').style.backgroundSize = "cover";
+                document.getElementById('fotocast4').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast4').style.backgroundPosition = "center center";
+                document.getElementById('namacast4').innerHTML = cast4;
+
+                document.getElementById('fotocast5').style.backgroundImage = "url('./castcomedy/awkawkawk.jpg')";
+                document.getElementById('fotocast5').style.backgroundSize = "cover";
+                document.getElementById('fotocast5').style.backgroundRepeat = "no-repeat";
+                document.getElementById('fotocast5').style.backgroundPosition = "center center";
+                document.getElementById('namacast5').innerHTML = cast5;
+
+            }
+            
+    </script>
+                
+    </body>
+</html>
